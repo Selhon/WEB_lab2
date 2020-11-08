@@ -7,6 +7,7 @@ $('.triangle-text-greeting').on('click',function () {
     if(!$('.bookmark-project')[0].classList.contains('active-project')){
         $('.bookmark-project')[0].classList.toggle('active-project');
         $('.window-content-project')[0].classList.toggle('active-window-project');
+        $('.pos-pj')[0].classList.toggle('active-pos-pj');
     }
 });
 $('.triangle-text-project').on('click',function () {
@@ -17,12 +18,14 @@ $('.triangle-text-project').on('click',function () {
     if($('.bookmark-project')[0].classList.contains('active-project')){
         $('.bookmark-project')[0].classList.toggle('active-project');
         $('.window-content-project')[0].classList.toggle('active-window-project');
+        $('.pos-pj')[0].classList.toggle('active-pos-pj');
     }
 });
 $('.triangle-text-contacts').on('click',function () {
     if($('.bookmark-project')[0].classList.contains('active-project')){
         $('.bookmark-project')[0].classList.toggle('active-project');
         $('.window-content-project')[0].classList.toggle('active-window-project');
+        $('.pos-pj')[0].classList.toggle('active-pos-pj');
     }
     if($('.bookmark-contacts')[0].classList.contains('active-contacts')){
         $('.bookmark-contacts')[0].classList.toggle('active-contacts');

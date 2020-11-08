@@ -11,10 +11,11 @@ h2{
 li {
     list-style-type: none; /* Убираем маркеры */
 }
-
 .site-header{
     position: absolute;
 }
+
+
 /*АНИМАЦИЯ*/
 .wr{
     position: relative;
@@ -30,6 +31,10 @@ li {
 .active-window-project{
     transform: translateY(85%);
 }
+.active-pos-pj{
+    transform: translateY(140%);
+}
+
 .active-window-contacts{
     transform: translateY(97%);
 }
@@ -64,9 +69,9 @@ li {
     left: 0;
     top: 0;
 }
-/*.jump-button-artist img:hover{
-    z-index: 0;
-}*/
+
+
+
 /*кнопки вверху экрана на главной станице для перехода в портфолио*/
 .jump-button-prog {
     position: absolute;
@@ -154,30 +159,47 @@ li {
     margin-left: 50%;
     margin-top: 51%;
     transform: translate(-50%,0);
-    z-index: 3;
+    z-index: 2;
 }
 .pos{
     display: flex;
     position: absolute;
     transform: translate(5%,160%);
+    z-index: 2;
+}
+.pos-pj{
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 61.5%;
+    transition: 0.5s;
     z-index: 3;
 }
-
-.foto-for-1p{
-    width: 500px;
-    height: 500px;
+.foto-for-2p{
+    float: left;
+    width: 530px;
+    height: 367px;
     z-index: 3;
     box-shadow: 7px 7px 9px rgba(14,14,14,0.3);
     border: 15px solid rgba(104,104,230,0.15);
-    /*transform: translate(30%,27%);
-    margin-top: 630px;
-    left: 0;*/
+    margin-right: 20px;
+
+}
+.text-window-content-pj{
+    line-height: 0.9em;
+    font-family: 'Comfortaa', cursive;
+    color: #4D006C;
+    z-index: 3;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.foto-for-1p{
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    box-shadow: 7px 7px 9px rgba(14,14,14,0.3);
+    border: 15px solid rgba(104,104,230,0.15);
 }
 .text-window-content{
-    /*margin-top: 630px;
-    left: 0;
-    margin-left: 50%;
-    transform: translate(-50%,50%);*/
     backdrop-filter: blur(25px);
     box-shadow: 7px 7px 9px rgba(14,14,14,0.3) ;
     border: 15px solid rgba(104,104,230,0.15);
@@ -186,7 +208,7 @@ li {
     margin-left: 50px;
     font-family: 'Comfortaa', cursive;
     color: #40047C;
-    z-index: 3;
+    z-index: 2;
     white-space: nowrap;
     font-size: 20px;
 }
@@ -199,9 +221,6 @@ li {
     left: 0;
     position: absolute;
     margin-top: 730px;
-/*margin-left: 50%;
-    transform: translate(-50%,0);
-    transform: translateY(68%);*/
     transition: 0.5s;
     z-index: 3;
     font-size: 0px;
@@ -224,7 +243,7 @@ li {
     transform: translate(260%,-180%);
     white-space: nowrap;
     font-size: 27px;
-    color: white;
+    color: #4D006C;
 }
 .window-content-project{
     filter: blur(80px);
@@ -234,9 +253,6 @@ li {
     left: 0;
     top: 0;
     position: absolute;
-    /*margin-left: 50%;
-    transform: translate(-50%,0%);
-    transform: translateY(85%);*/
     margin-top: 842px;
     transition: 0.5s;
     z-index: 3;
@@ -248,9 +264,6 @@ li {
     left: 0;
     position: absolute;
     margin-top: 830px;
-    /*margin-left: 50%;
-    transform: translate(-50%,0);
-    transform: translateY(75%);*/
     transition: 0.5s;
     z-index: 4;
     font-size: 0px;
@@ -284,9 +297,6 @@ li {
     top: 0;
     position: absolute;
     margin-top: 942px;
-    /*margin-left: 50%;
-    transform: translate(-50%,0);
-    transform: translateY(97%);*/
     transition: 0.5s;
     z-index: 4;
 }
