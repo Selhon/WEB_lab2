@@ -34,6 +34,9 @@ li {
 .active-pos-pj{
     transform: translateY(140%);
 }
+.active-pos-con{
+    transform: translateY(550%);
+}
 
 .active-window-contacts{
     transform: translateY(97%);
@@ -174,6 +177,22 @@ li {
     transition: 0.5s;
     z-index: 3;
 }
+.pos-con{
+    position: absolute;
+    margin-top: 75%;
+    transition: 0.5s;
+    z-index: 4;
+}
+.pos-con1{
+    float: left;
+    margin-right: 430px;
+    margin-left: 25%;
+}
+
+.foto-for-3p{
+    float: left;
+    margin-right: 20px;
+}
 .foto-for-2p{
     float: left;
     width: 530px;
@@ -299,6 +318,21 @@ li {
     margin-top: 942px;
     transition: 0.5s;
     z-index: 4;
+}
+.text-window-content-con{
+    line-height: 2.3em;
+    font-family: 'Comfortaa', cursive;
+    color: #40047C;
+    white-space: nowrap;
+    font-size: 20px;
+}
+.text-window-content-con2{
+    margin-top: -3%;
+    line-height: 1.5em;
+    font-family: 'Comfortaa', cursive;
+    color: #40047C;
+    white-space: nowrap;
+    font-size: 20px;
 }
 
 
