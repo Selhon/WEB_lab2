@@ -11,6 +11,35 @@ h2{
 li {
     list-style-type: none; /* Убираем маркеры */
 }
+.button-con-lab6{
+    margin-left: 227px;
+    margin-top: 190px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 6;
+}
+.button-con-active-lab6{
+    transform: translateX(-100%);
+}
+.text-con-lab6{
+    font-size: 40px;
+    color: #40047C;
+    font-family: "Jura", sans-serif;
+}
+.lab6{
+    transition: 0.5s;
+    border: 15px solid rgba(104,104,230,0.15);
+    line-height: 2.5em;
+    background: #7fc1ff;
+    z-index: 6;
+    position: fixed;
+    left: 0;
+    top: 470px;
+    width: 13%;
+    height: 30vh;
+}
+
 .site-header{
     position: absolute;
 }
@@ -194,15 +223,27 @@ li {
     margin-right: 20px;
 }
 .foto-for-2p{
+    transition: 0.8s;
     float: left;
     width: 530px;
     height: 367px;
+    background-size: 530px;
     z-index: 3;
     box-shadow: 7px 7px 9px rgba(14,14,14,0.3);
     border: 15px solid rgba(104,104,230,0.15);
     margin-right: 20px;
 
 }
+.slide-foto-1{
+    background-image: url("21.jpg");
+}
+.slide-foto-2{
+    background-image: url("212.jpg");
+}
+.slide-foto-3{
+    background-image: url("213.jpg");
+}
+
 .text-window-content-pj{
     line-height: 0.9em;
     font-family: 'Comfortaa', cursive;

@@ -64,3 +64,23 @@ $('.text-button-artist').on('mouseout', function (){setTimeout(function () {
     $('.jump-button-artist')[0].classList.toggle('pass-button-art-z');
     $('.jump-button-artist')[0].classList.toggle('active-button-art-z');
 },250)});
+
+/*анимация кнопки контакты в левом нижнем углу экрана (Лаб6)*/
+$('.button-con-lab6').on('click',function () {
+    console.log("AAA");
+    $('.lab6').toggleClass('button-con-active-lab6');
+})
+
+/*смена изображений при нажатии (Лаб6)*/
+$('.foto-for-2p').on('click',function () {
+    let classList = $('.foto-for-2p')[0].classList;
+    let nameFoto=String(classList[1]).slice(0,11);
+    if((Number(String(classList[1]).slice(-1))+1)<=3){
+        nameFoto=nameFoto+String(Number(classList[1].slice(11))+1);
+    }else{
+        console.log(String(classList[1]).slice(-1));
+        nameFoto=nameFoto+"1";
+    }
+    $('.foto-for-2p').toggleClass(classList[1]);
+    $('.foto-for-2p').toggleClass(nameFoto);
+})
