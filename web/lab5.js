@@ -62,16 +62,16 @@ function create(max){
     return arr;
 }
 
-let items1=create(10);
+//let items1=create(10);
 let items2=create(1000);
-document.write("Начальные массивы:" + "<br/>");
-document.write(items1+"<br/>");
+document.write("Начальный массив:" + "<br/>");
+//document.write(items1+"<br/>");
 document.write(items2+"<br/>");
 document.write("MIN MAX MEDIANA:" + "<br/>");
-document.write(min(items1)+" "+max(items1)+" "+median(items1)+"<br/>");
-let result = quickSort(items1, 0, items1.length - 1);
-document.write(result+"<br/>");
-result = quickSort(items2, 0, items2.length - 1);
+document.write(min(items2)+" "+max(items2)+" "+median(items2)+"<br/>");
+//let result = quickSort(items1, 0, items1.length - 1);
+//document.write(result+"<br/>");
+let result = quickSort(items2, 0, items2.length - 1);
 document.write(result+"<br/>"+"<br/>");
 
 // 4 ЗАДАНИЕ
